@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package type="module">
+
+    <!-- UID of package. -->
+    <uid>mod.verone.calendar</uid>
+    <!-- Package name. -->
+    <name>Calendar</name>
+    <!-- Package version. -->
+    <version>0.1.0</version>
+    <!-- Package release date. -->
+    <relase-date>2015.11.10</relase-date>
+    <!-- Package license. -->
+    <license>GPLv3</license>
+    <!-- Author details. -->
+    <author>
+        <name>Adam Banaszkiewicz</name>
+        <url>http://www.veronecrm.com</url>
+    </author>
+
+    <!-- Settings list. -->
+    <setting type="2" name="mod.calendar.filters">,</setting>
+    <setting type="2" name="mod.calendar.widget.notes"></setting>
+
+    <!-- Database queries list -->
+    <db-query type="file" scenario="install">Module/Resources/Install/sql/install-calendar_event.sql</db-query>
+    <db-query type="file" scenario="install">Module/Resources/Install/sql/install-calendar_todo.sql</db-query>
+    <db-query type="file" scenario="uninstall">Resources/Uninstall/sql/uninstall.sql</db-query>
+
+</package>
